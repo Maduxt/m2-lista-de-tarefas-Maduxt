@@ -1,0 +1,142 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e2e2e2;
+}
+
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    height: 90px;
+}
+
+	
+.header__title{ 
+    color: #3b5bdb;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.input__box {
+    padding: 15px;
+    font-size: 17px;
+    width: 650px;
+    background-color: #ebebeb;
+    border: #ebebeb 1px;
+    border-radius: 5px;
+}
+
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px 40px 0px;
+    align-items: center;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    width: 1180px;
+    justify-content: space-between;
+    height: 200px;
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.form__title {
+    font-size: 24px;
+}
+
+.form__input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input--priority {
+    width: 470px;
+}
+
+.form__button--add-task {
+    height: 55px;
+    background-color: #3b5bdb;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.tasks__container {
+    display: flex;
+    flex-direction: column;
+    width: 1180px;
+    height: 300px;
+    background-color: #ffffff;
+    justify-content: space-around;
+    padding: 50px 60px 50px 60px;
+    border-radius: 10px;
+}
+
+.tasks__container > h2 {
+    font-size: 24px;
+}
+
+.tasks__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 230px;
+}
+
+.task__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f1f3f5;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+.task-info__container {
+  display: flex;
+}
+
+.task-type {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.span-urgent {
+    background-color: #e40404;
+  }
+  
+  .span-important {
+    background-color: #f3a703;
+  }
+  
+  .span-normal {
+    background-color: #028302;
+  }
+  
+  .task__button--remove-task {
+    background-image: url('assets/trash-icon.svg');
+    background-repeat: no-repeat;
+    border: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
