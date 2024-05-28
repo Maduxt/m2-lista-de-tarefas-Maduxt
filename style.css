@@ -81,7 +81,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 1180px;
-    height: 300px;
     background-color: #ffffff;
     justify-content: space-around;
     padding: 50px 60px 50px 60px;
@@ -90,13 +89,16 @@ body {
 
 .tasks__container > h2 {
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .tasks__list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 230px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 15px;
 }
 
 .task__item {
@@ -106,6 +108,7 @@ body {
     background-color: #f1f3f5;
     padding: 22px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .task-info__container {
