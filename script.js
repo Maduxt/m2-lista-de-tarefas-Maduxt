@@ -86,3 +86,5 @@ function removeTask(taskToRemove) {
   tasks = tasks.filter(task => task !== taskToRemove); // Filtrando o array para remover a tarefa específica
   renderElements(tasks); // Atualizando a lista de tarefas na tela
 }
+
+button
