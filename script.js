@@ -12,15 +12,14 @@ const tasks = [
 ];
 
 
-function renderElements (tasks) {
-  const taskList = document.querySelector('.tasks__list')
+function renderElements(tasks) {
+  const taskList = document.querySelector('.tasks__list');
+  taskList.innerHTML = '';
 
-  taskList.innerHTML = ''
-
-  tasks.forEach (task => {
-    const taskItem = createTaskItem(task)
-    taskList.appendChild(taskItem)
-  })
+  for (let i = 0; i < tasks.length; i++) {
+    const taskItem = createTaskItem(tasks[i]);
+    taskList.appendChild(taskItem);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -83,8 +82,9 @@ function createTaskItem (task) {
 }
 
 function removeTask(taskToRemove) {
-  tasks = tasks.filter(task => task !== taskToRemove); // Filtrando o array para remover a tarefa específica
-  renderElements(tasks); // Atualizando a lista de tarefas na tela
+  const taskIndex = tasks.indexOf(taskToRemove);
+  if (taskIndex > -1) {
+    tasks.splice(taskIndex, 1);
+  }
+  renderElements(tasks);
 }
-
-button
